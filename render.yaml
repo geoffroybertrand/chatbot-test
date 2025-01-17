@@ -3,7 +3,7 @@ services:
     name: mon-superviseur-ia
     runtime: python
     buildCommand: pip install -r requirements.txt
-    startCommand: streamlit run app/interface/main.py --server.port=$PORT --server.address=0.0.0.0
+    startCommand: PYTHONPATH=$PYTHONPATH:/opt/render/project/src streamlit run app/interface/main.py
     envVars:
       - key: CLAUDE_API_KEY
         sync: false

@@ -1,7 +1,7 @@
 import streamlit as st
 from datetime import datetime
 import asyncio
-from ..chat.chain import ChatChain
+from app.chat.chain import ChatChain 
 
 class ChatInterface:
     def __init__(self):

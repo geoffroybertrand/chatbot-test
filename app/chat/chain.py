@@ -1,7 +1,7 @@
 from typing import Dict, List, Optional
 from datetime import datetime
 import anthropic
-from ..config import settings
+from app.config import settings  # Import absolu au lieu de relatif
 
 class ChatChain:
     def __init__(self):
